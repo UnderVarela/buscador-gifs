@@ -1,4 +1,3 @@
-
 const URL = 'https://api.giphy.com/v1/gifs/search'
 const API_KEY = '6KsMKYCgYOnQKKVk6c3a4TvzJeUPF7xj'
 export async function getGifs (categoryValue) {

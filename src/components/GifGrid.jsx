@@ -10,14 +10,14 @@ export function GifGrid ({ category }) {
   }, [])
   return (
 
-    <div className='flex gap-1 flex-wrap'>
+    <div className='flex flex-wrap gap-1'>
       {
         data?.map(function (gif) {
           const { id, title, url } = gif
           return (
             <figure key={id}>
-              <img className='w-56' key={id} src={url} alt={title} />
-              <figcaption>{title}</figcaption>
+              <img className='object-cover w-56 h-56 rounded' key={id} src={url} alt={title} />
+              {/* <figcaption>{title}</figcaption> */}
             </figure>
           )
         })
